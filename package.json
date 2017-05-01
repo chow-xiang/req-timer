@@ -1,0 +1,22 @@
+{
+  "name": "req-timer",
+  "version": "0.3.0",
+  "description": "A website stress testing tool",
+  "main": "index.js",
+  "bin": "./bin/start",
+  "scripts": {
+    "test": null,
+    "prepublish": "js-yaml package.yaml > package.json"
+  },
+  "keywords": [
+    "stress",
+    "tool",
+    "request"
+  ],
+  "author": "chow xiang",
+  "license": "WTFPL",
+  "dependencies": {
+    "js-yaml": ">=3.0.1 <4.0.0-0",
+    "colors": ">=1.1.2"
+  }
+}

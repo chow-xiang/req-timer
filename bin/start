@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var reqTimer = require('../lib/req-timer');
+var reqOpt = require('../lib/format-arg')();
+var {n, t, b, m, h, url} = reqOpt;
+
+// 根据参数做压力test
+var result = Promise.all([reqTimer(n, t, b, m, h, url)]);
+
+// 输出结果
+console.log(result);
